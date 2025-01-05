@@ -1,0 +1,25 @@
+@keyframes fallAndRotate {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.cube {
+  background: rgba(255, 216, 204, 0.15);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 216, 204, 0.3);
+  animation: fallAndRotate linear infinite;
+  box-shadow: 0 0 20px rgba(255, 216, 204, 0.1);
+  transform-style: preserve-3d;
+}

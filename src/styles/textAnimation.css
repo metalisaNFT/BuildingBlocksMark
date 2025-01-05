@@ -1,0 +1,35 @@
+@keyframes textGradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-text {
+  background: linear-gradient(
+    135deg,
+    #FFBD9B 0%,
+    #FFD8CC 25%,
+    #FFEEDB 50%,
+    #FFD8CC 75%,
+    #FFBD9B 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textGradient 15s ease infinite;
+  display: inline-block;
+  padding: 0.1em 0;
+  text-shadow: 
+    0 0 20px rgba(255, 189, 155, 0.3),
+    0 0 40px rgba(255, 189, 155, 0.2),
+    0 0 60px rgba(255, 189, 155, 0.1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  width: 100%;
+}

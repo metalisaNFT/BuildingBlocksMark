@@ -1,0 +1,25 @@
+@keyframes dropAndRotate {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(1000px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bouncing-cube {
+  background: rgba(255, 216, 204, 0.1);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 216, 204, 0.2);
+  animation: dropAndRotate linear infinite;
+  box-shadow: 0 0 15px rgba(255, 216, 204, 0.05);
+  transform-style: preserve-3d;
+}
